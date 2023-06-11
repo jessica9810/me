@@ -18,26 +18,26 @@ import platform
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
 some_words = ["what", "does", "this", "line", "do", "?"]
-
+#I think this will print what, does, this, line, do, ?
 for word in some_words:
-    print(word)
-
+    print(word) #it printed each word in the some_words list on a separate line
+#I think this will print what, does, this, line, do, ?
 for x in some_words:
-    print(x)
-
-print(some_words)
-
+    print(x) #it printed each element in the some_words list on a separate line
+#I think this will print what, does, this, line, do, ?
+print(some_words) #it printed the entire some_words list
+#If the length of some_words is greater than 3, print the message
 if len(some_words) > 3:
-    print("some_words contains more than 3 words")
+    print("some_words contains more than 3 words") #it printed message which the length of some_words is greater than 3
 
-
+#i think it will print platform uname
 def usefulFunction():
     """
     You may want to look up what uname does before you guess
     what the line below does:
     https://docs.python.org/3/library/platform.html#platform.uname
     """
-    print(platform.uname())
+    print(platform.uname()) #it printed the information about the current system
 
 
 usefulFunction()
