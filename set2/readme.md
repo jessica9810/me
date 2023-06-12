@@ -1,2 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
 I learned about the importance of correct syntax and proper function definition in Python.
+I discovered how to define and call functions in Python. Functions help break down complex programs into smaller, reusable blocks of code. I learned about function parameters and return values. It was fascinating to see how Python allows for both required and optional function arguments.
