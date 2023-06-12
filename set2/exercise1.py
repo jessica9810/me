@@ -20,10 +20,10 @@ print("hello! Let's get started")  # it printed "hello! Let's get started"
 some_words = ["what", "does", "this", "line", "do", "?"]
 #I think this will print what, does, this, line, do, ?
 for word in some_words:
-    print(word) #it printed each word in the some_words list on a separate line
+    print(word) #Print each word in the some_words list on a separate line
 #I think this will print what, does, this, line, do, ?
 for x in some_words:
-    print(x) #it printed each element in the some_words list on a separate line
+    print(x) #Print each element in the some_words list on a separate line
 #I think this will print what, does, this, line, do, ?
 print(some_words) #it printed the entire some_words list
 #If the length of some_words is greater than 3, print the message
