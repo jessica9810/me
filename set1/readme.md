@@ -1,6 +1,6 @@
 TODO: Reflect on what you learned this week and what is still unclear.
 hello
-Today marks the beginning of my Python learning journey, and I couldn't be more excited. As a first-timer in the world of Python, I have a deep curiosity and eagerness to explore this language. Before diving in, I downloaded the latest version of Python and successfully installed it on my computer.
+Today marks the beginning of my Python learning journey, and I couldn't be more excited. As a first-timer in the world of Python. I have a deep curiosity and eagerness to explore this language. Before diving in, I downloaded the latest version of Python and successfully installed it on my computer.
 
 To start off, I began familiarizing myself with the basic concepts of Python. I learned that Python is a high-level programming language known for its simplicity and powerful features. I dedicated some time to understanding the fundamental syntax of Python, such as variable declaration, conditional statements, and loop structures. Additionally, I delved into using Python's built-in functions and explored commonly used data types, such as integers, floats, and strings.
 
