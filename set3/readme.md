@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+Today we mainly learned some functions, learned some python definitions, and we started to try to do some exercises on our own. It was more difficult than last week's, but I was interested in it, so I learned some relevant content and understood the general logic.
