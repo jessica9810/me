@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week we have been learning about the use of json and pandas, mainly including how to find data, how to graph it, and we are about to start the DATA PROJECT, and there is some anticipation as this is the first time we have made a data project in python.
