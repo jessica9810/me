@@ -152,7 +152,14 @@ def square_koch(t, order, size):
     Leave the turtle facing the same direction.
 
     """
-    trace = ""
+    if order == 0:
+        t.forward(size)
+        trace = "F"
+    else:
+        for angle in [90, -90, -90, 90]:
+            trace += square_koch(t, order - 1, size / 3)
+            t.left(angle)
+        trace = "F" + trace + "F"
     # write the rest of the function here.
     return str(order) + trace
     pass

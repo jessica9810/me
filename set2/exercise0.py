@@ -1,154 +1,263 @@
 # -*- coding: UTF-8 -*-
-"""Modify each function so that it does what the doc string asks you to do.
-
-The command to run the tests is:
-
-python ../course/set2/tests.py
-
-
-In each function, where you see:
-
-    the_answer = None
-
-replace None with the actual answer.
-
-Remember, none of these are trick questions. If it seems like an incredibly 
-obvious answer, that's because it is!
 """
+I'm in UR exam.
+This is the same as the setly exercises, fill in the functions,
+and test them to see if they work.
+You have 2 hours.
+"""
+import json
+import os
+import random
+import string
+import time
+import requests
+from typing import Dict, List
 
 
-def add_1(a_number):
-    """Return a number that is 1 bigger than number given.
+def give_me_five() -> int:
+    """Returns the integer five."""
+    return None
 
-    This isn't a trick!
 
-    This is an example function to get you started.
-    Run the tests now and this one should go green. Free marks!
+def password_please() -> str:
+    """Returns a string, 8 or more characters long, contains at
+    least one upper case letter and one lowercase letter.
+    TIP: don't put in a real password!"""
+    return None
+
+
+def list_please() -> list:
+    """Returns a list, you can put anything in the list."""
+    return None
+
+
+def int_list_please() -> list:
+    """Returns a list of integers, any integers are fine."""
+    return None
+
+
+def string_list_please() -> list:
+    """Returns a list of strings, any string are fine."""
+    return None
+
+
+def dictionary_please() -> dict:
+    """Returns a dictionary, anything you like."""
+    return None
+
+
+def is_it_5(some_number) -> bool:
+    """Returns True if the argument passed is 5, otherwise returns False."""
+    well_is_it = None
+    return well_is_it
+
+
+def take_five(some_number) -> int:
+    """Subtracts 5 from some_number."""
+    return None
+
+
+def greet(name="Towering Timmy") -> str:
+    """Return a greeting.
+    return a string of "Well hello, " and the name argument.
+    E.g. if given as "Towering Timmy" it should
+         return "Well hello, Towering Timmy"
     """
-    the_answer = a_number + 1
-    return the_answer
+    return None
 
 
-def add_5(a_number):
-    """Return a number that is 5 bigger than number given.
-
-    This isn't a trick!
-    First thing to do is to remove the the_answer = None
-
-    return the_answer. That's just tellign python that
-    the empty block is intentional - it's python's "this page is intentionally
-    left blank"
-    Then you need to:
-        return a_number plus five
-    except expressed in python, not english
+def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
+    """Count the number of 1s in the input_list.
+    Return an integer.
+    TIP: the test will use a different input_list, so don't just return 2
     """
-    the_answer = a_number + 5
-    return the_answer
+    count = None
+
+    return count
 
 
-def adder(a_number, another_number):
-    """Add two numbers.
-
-    Same as above, but with any two numbers.
+def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
+    """Count the number of times search_for_this shows up in the input_list.
+    Return an integer.
     """
-    the_answer = a_number + another_number
-    return the_answer
+    count = None
+
+    return count
 
 
-def shout(a_string):
-    """Return a string in uppercase.
+def fizz_buzz() -> List:
+    """Do the fizzBuzz.
 
-    look up the docs for string methods. Either in the official docs, here:
-        https://docs.python.org/3/library/string.html
-    or in any of the million places that google will give you.
-    "python make a string uppercase" is a good starting search query.
-    HINT: there are a few things with upper case in their description, but
-          they all do different things. You'll need to actually read the
-          docs to find out which one you actually need.
+    This is the most famous basic programming test of all time!
+
+       "Write a program that prints the numbers from 1 to 100. But for
+        multiples of three print "Fizz" instead of the number and for
+        the multiples of five print "Buzz". For numbers which are
+        multiples of both three and five print "FizzBuzz"."
+
+    from https://blog.codinghorror.com/why-cant-programmers-program/
+
+    Return a list that has an integer if the number isn't special,
+    and a string if it is. E.g.
+        [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8,
+         'Fizz', 'Buzz',  11, 'Fizz', 13, 14,
+         'FizzBuzz', 16, 17, ...]
     """
-    the_answer = a_string.upper() 
-    return the_answer
+    fizz_buzz_list = []
+    # your code here
+
+    return fizz_buzz_list
 
 
-def really_shout(a_string):
-    """Return a string in uppercase, with an exclamation mark on the end.
+def set_it_on_fire(input_string="very naughty boy") -> str:
+    """Interleave the input_string with the 🔥 emoji.
 
-    In the spirit of being DRY (don't repeat yourself) reuse the shout() function
-    from above.
-    You could do this by copying the code, but the tests are checking to see
-    that you've reused the function you already wrote.
-    Look up how to 'concatinate' strings to make this happen.
+    Given any string, interleave it with 🔥. Also make it be upper case.
+    e.g. "very naughty boy" should return the string
+    "🔥V🔥E🔥R🔥Y🔥 🔥N🔥A🔥U🔥G🔥H🔥T🔥Y🔥 🔥B🔥O🔥Y🔥"
+    TIP: strings are pretty much lists of chars.
+         If you list("string") you get ['s', 't', 'r', 'i', 'n', 'g']
+    TIP: consider using the 'join' method in Python.
+    TIP: make sure that you have a 🔥 on both ends of the string.
     """
-    the_answer = a_string.upper() + "!"
-    return the_answer
+
+    return None
 
 
-def shout_with_a_number(a_string, a_number):
-    """Return a string in uppercase with a space and a_number concatentated.
-    E.g.
-    >>> shout_with_a_number('hello', 42)
-    'HELLO 42'
+def pet_filter(letter="a") -> List:
+    """Return a list of pets whose name contains the character 'letter'"""
+    # fmt: off
+    pets = [
+        "dog", "goat", "pig", "sheep", "cattle", "zebu", "cat", "chicken", 
+        "guinea pig", "donkey", "duck", "water buffalo", "python", "scorpion",
+        "western honey bee", "dromedary camel", "horse", "silkmoth", 
+        "pigeon", "goose", "yak", "bactrian camel", "llama", "alpaca", 
+        "guineafowl", "ferret", "muscovy duck", "barbary dove", "cichlid",
+        "bali cattle", "gayal", "turkey", "goldfish", "rabbit", "koi", 
+        "canary", "society finch", "fancy mouse", "siamese fighting fish", 
+        "fancy rat and lab rat", "mink", "red fox", "hedgehog", "guppy"
+    ]
+    # fmt: on
+    filtered = []
 
-    HINT: Lookup how to cast a_number to a string or lookup how to use
-          string formatting in python.
-          There are a few ways to do this, so if you're looking for a
-          challenge, see if you can make the test pass with at least two ways
-          of doing the same job.
+    return filtered
+
+
+def best_letter_for_pets() -> str:
+    """Return the letter that is present at least once in the most pet names.
+
+    Reusing the pet_filter, find the letter that gives the longest list of pets
+    TIP: return just a letter, not the list of animals.
+    TIP: use the function you just wrote to help you here!
+    TIP: you've seen this before in the pokedex.
     """
-    the_answer = a_string.upper() +" " + str(a_number)
-    return the_answer
+    import string
+
+    the_alphabet = string.ascii_lowercase
+    most_popular_letter = ""
+
+    return most_popular_letter
 
 
-"""#################################
-You don't need to worry about anything below here. 
-It's there to easily test your code from inside this file 
-so that you can use the debugger more easily.
-   #################################"""
+def make_filler_text_dictionary() -> Dict:
+    """Make a dictionary of random words filler text.
+    There is a random word generator here:
+    https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=4
+    If we set wordlength=18, we will get something like this:
+    >>> url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=18"
+    >>> r = requests.get(url)
+    >>> r.text # will get you a string, something like this:
+    >>> "occipitosphenoidal"
 
+    Return a dictionary where the keys are numbers, and the values are lists of
+    words. e.g.
+    {
+        3: ['Seb', 'the', 'yob', "boy"],
+        4: ['aaaa', 'bbbb', 'cccc', "ddd"],
+        ...
+        7: ['aaaaaaa', 'bbbbbbb', 'ccccccc', 'ddddddd']
+    }
+    Use the API to get the 4 words.
 
-def minitest(f, args, expected):
-    """Run a function with a list of args and print a response.
-
-    This is a helper. Don't edit it.
+    The dictionary should have the numbers between 3 and 7 inclusive.
+    (i.e. 3, 4, 5, 6, 7 and 4 words for each)
+    TIP: you'll need the requests library
     """
-    result = f(*args)
 
-    name = f.__name__
-    args = str(args)[1:-1]
-    result_correct = result == expected
-    expected = expected
-    result_message = "✅" if result_correct else f"❌👎👎👎👎👎👎👎👎 you returned {result}"
-    print(f"expect {name}({args}) to be {expected} 👉 {result_message}")
-    return result == expected
+    url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength="
+    wd = {}
+
+    return wd
+
+
+def random_filler_text(number_of_words=200) -> str:
+    """Make a paragraph of random filler text.
+    Using the dictionary returned by make_filler_text_dictionary, make a
+    paragraph of text using randomly picked words. Each word should be a random
+    length, and a random one of the words.
+    Make the paragraph have number_of_words words in it.
+    Return it as a string
+    TIP: you'll need the random library,
+        e.g. random.randint(low, high)
+    """
+
+    my_dict = make_filler_text_dictionary()
+
+    words = []
+
+    return " ".join(words)
+
+
+def fast_filler(number_of_words=200) -> str:
+    """Makes filler text, but really fast.
+
+    This time, the first time the code runs, save the dictionary returned
+    from make_filler_text_dictionary to a file.
+    On the second run, if the file already exists use it instead of going to
+    the internet.
+    Use the filename "dict_cache.json"
+    TIP: you'll need the os and json libraries
+    TIP: you'll probably want to use json dumps and loads to get the
+    dictionary into and out of the file. Be careful when you read it back in,
+    it'll convert integer keys to strings.
+    If you get this one to work, you are a Very Good Programmer™!
+    """
+
+    fname = "dict_cache.json"
+
+    return None
 
 
 if __name__ == "__main__":
-    """This code runs when you run this file."""
-
+    print("give_me_five", give_me_five(), type(give_me_five()))
     print(
-        """
-          This section does a quick test on your results and prints them nicely
-          It's NOT the official tests, they are in tests.py as usual.
-          Add to these tests if you want, give them arguments etc. to make sure that your
-          code is robust to the situations that you'll see in action.
-
-          the format is: minitest(function_name, [list, of, arguments], expected_result)
-
-          REMEMBER: these aren't the tests that you submit, these are just
-          there to keep you sane."""
+        "strong_password_please",
+        password_please(),
+        type(password_please()) == str,
     )
-
-    minitest(add_1, [1], 2)
-    minitest(add_5, [1], 6)
-    minitest(add_5, [6], 11)
-    minitest(add_5, [-3], 2)
-    minitest(add_5, [0.5], 5.5)
-    minitest(adder, [-0.5, -0.5], -1)
-    minitest(adder, [2, 2], 4)
-    minitest(adder, [2, -2], 0)
-    minitest(shout, ["hello"], "HELLO")
-    minitest(really_shout, ["hello"], "HELLO!")
-    minitest(really_shout, [""], "!")
-    minitest(really_shout, ["!"], "!!")
-    minitest(shout_with_a_number, ("hello", 42), "HELLO 42")
-    print("p.s. see note above these results")
+    print("int_list_please", int_list_please(), type(int_list_please()) == list)
+    print(
+        "string_list_please", string_list_please(), type(string_list_please()) == list
+    )
+    print("dictionary_please", type(dictionary_please()) == dict)
+    print("is_it_5", is_it_5(5))
+    print("is_it_5", is_it_5(6))
+    print("take_five", take_five(5))
+    print("take_five", take_five(3))
+    print("greet:", greet())
+    print("three_counter:", one_counter())
+    print("n_counter:", n_counter(7))
+    print("fizz_buzz:", fizz_buzz())
+    print("put_behind_bars:", set_it_on_fire())
+    print("pet_filter:", pet_filter())
+    print("best_letter_for_pets:", best_letter_for_pets())
+    print("make_filler_text_dictionary:", make_filler_text_dictionary())
+    print("random_filler_text:", random_filler_text())
+    print("fast_filler:", fast_filler())
+    for i in range(4):
+        print(i, fast_filler(number_of_words=20), "\n")
+    print(
+        "These are mini tests, they show you some output.",
+        "\nDon't forget to run the real tests.",
+        "\nThey test your code against the non-default arguments",
+    )
