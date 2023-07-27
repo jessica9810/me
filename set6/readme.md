@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+I've been on vacation this week, and I've been learning a bit about python, and I'm starting to get really interested in python applications. I realized that on the internet, it turns out that a lot of things have python applications.

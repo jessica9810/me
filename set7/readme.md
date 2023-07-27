@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+This week I started looking for suitable data to use for processing, I picked two, I think it's still the volume of data that is suitable to be processed in pandas.
