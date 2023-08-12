@@ -1,2 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
-Started to move on to pandas this week and started trying to make maps in pandas, which looks interesting.
+Started to move on to pandas this week and started trying to make maps in pandas, which looks interesting.Next week is the presentation. I'm excited.
