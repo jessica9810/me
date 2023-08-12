@@ -1,2 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
-Continuing to learn pandas and starting to organize my data.
+This week I am so excited.Continuing to learn pandas and starting to organize my data.Learning more and more about pandas.I become more confident.
